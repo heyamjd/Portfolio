@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amajad Manihar — CS Student & Developer building modern web solutions.">
+  <title>Amajad Manihar | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-loader" class="loader-wrap"><div class="loader-ring"></div><span class="loader-text">Loading&hellip;</span></div>
+
+  <header id="main-header" class="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket"> /&gt;</span></a>
+      <ul id="nav-menu" class="nav__menu">
+        <li><a href="#hero" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Journey</a></li>
+        <li><a href="#certifications" class="nav__link">Certs</a></li>
+        <li><a href="#achievements" class="nav__link">Awards</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <i data-lucide="moon" class="icon-moon"></i><i data-lucide="sun" class="icon-sun"></i>
+        </button>
+        <button id="nav-toggle" class="btn-icon nav__hamburger" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="hero__particles" aria-hidden="true"></div>
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__container">
+        <div class="hero__content reveal">
+          <span class="hero__greeting">👋 Hello, I'm</span>
+          <h1 class="hero__title">Amajad <span class="gradient-text">Manihar</span></h1>
+          <p class="hero__subtitle typewriter" id="typewriter-text"></p>
+          <p class="hero__desc">Motivated CS student skilled in Java, Python &amp; MERN-stack development. Eager to build modern software solutions and contribute to digital transformation.</p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary"><i data-lucide="folder-open"></i> View My Work</a>
+            <a href="#contact" class="btn btn--outline"><i data-lucide="send"></i> Get in Touch</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://linkedin.com/in/heyamjd" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/heyamjd" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="mailto:amjad.manihar9680@gmail.com" class="social-link" aria-label="Email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="hero__image reveal reveal--right">
+          <div class="hero__avatar-ring">
+            <img src="assets/avatar.jpg" alt="Amajad Manihar" class="hero__avatar" width="420" height="420">
+          </div>
+          <div class="hero__float-badge badge--top-right"><i data-lucide="code-2"></i> MERN Stack</div>
+          <div class="hero__float-badge badge--bottom-left"><i data-lucide="bar-chart-3"></i> Data Analytics</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down"><i data-lucide="chevrons-down"></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="user"></i> About Me</span>
+          <h2 class="section__title">Know Me <span class="gradient-text">Better</span></h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>I am a motivated <strong>Computer Science</strong> student at <strong>Poornima University</strong>, Jaipur with a strong foundation in Java, Python, and MERN-stack development. I'm passionate about applying my skills in software development and system improvement to real-world IT challenges.</p>
+            <p>I am particularly interested in contributing to <strong>digital transformation</strong> projects, product development, and automation. Skilled in writing clean, efficient code and collaborating across teams to deliver high-quality, modern software solutions.</p>
+            <div class="about__stats">
+              <div class="stat-card"><span class="stat-card__number" data-target="5">0</span><span class="stat-card__plus">+</span><span class="stat-card__label">Certifications</span></div>
+              <div class="stat-card"><span class="stat-card__number" data-target="6">0</span><span class="stat-card__plus">th</span><span class="stat-card__label">Semester</span></div>
+              <div class="stat-card"><span class="stat-card__number" data-target="3">0</span><span class="stat-card__plus">+</span><span class="stat-card__label">Achievements</span></div>
+            </div>
+          </div>
+          <div class="about__image reveal reveal--right">
+            <div class="about__code-window">
+              <div class="code-window__dots"><span></span><span></span><span></span></div>
+              <pre class="code-window__content"><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Amajad Manihar"</span>,
+  <span class="code-key">role</span>: <span class="code-str">"CS Student &amp; Dev"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"Jaipur, India"</span>,
+  <span class="code-key">stack</span>: [<span class="code-str">"Java"</span>,
+    <span class="code-str">"Python"</span>, <span class="code-str">"React"</span>,
+    <span class="code-str">"Node.js"</span>, <span class="code-str">"MySQL"</span>],
+  <span class="code-key">passion</span>: <span class="code-str">"Building cool stuff"</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="cpu"></i> Skills & Tech</span>
+          <h2 class="section__title">My <span class="gradient-text">Tech Stack</span></h2>
+        </div>
+        <div class="skills__marquee reveal">
+          <div class="marquee-track">
+            <div class="marquee-content">
+              <div class="skill-chip"><span class="skill-chip__icon">☕</span> Java</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🐍</span> Python</div>
+              <div class="skill-chip"><span class="skill-chip__icon">⚛️</span> React.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🟢</span> Node.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🚂</span> Express.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🐬</span> MySQL</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🌐</span> HTML5/CSS3</div>
+              <div class="skill-chip"><span class="skill-chip__icon">⚡</span> JavaScript</div>
+              <div class="skill-chip"><span class="skill-chip__icon">📊</span> Tableau</div>
+              <div class="skill-chip"><span class="skill-chip__icon">📈</span> Power BI</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🔧</span> Git/GitHub</div>
+              <div class="skill-chip"><span class="skill-chip__icon">☁️</span> OCI</div>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+              <div class="skill-chip"><span class="skill-chip__icon">☕</span> Java</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🐍</span> Python</div>
+              <div class="skill-chip"><span class="skill-chip__icon">⚛️</span> React.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🟢</span> Node.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🚂</span> Express.js</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🐬</span> MySQL</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🌐</span> HTML5/CSS3</div>
+              <div class="skill-chip"><span class="skill-chip__icon">⚡</span> JavaScript</div>
+              <div class="skill-chip"><span class="skill-chip__icon">📊</span> Tableau</div>
+              <div class="skill-chip"><span class="skill-chip__icon">📈</span> Power BI</div>
+              <div class="skill-chip"><span class="skill-chip__icon">🔧</span> Git/GitHub</div>
+              <div class="skill-chip"><span class="skill-chip__icon">☁️</span> OCI</div>
+            </div>
+          </div>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#E76F00"><i data-lucide="coffee"></i></div><h3 class="skill-card__title">Java</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="88"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#3776AB"><i data-lucide="terminal"></i></div><h3 class="skill-card__title">Python</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="82"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#61DAFB"><i data-lucide="atom"></i></div><h3 class="skill-card__title">React.js</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="85"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#68A063"><i data-lucide="hexagon"></i></div><h3 class="skill-card__title">Node.js</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="80"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#F7DF1E"><i data-lucide="file-json"></i></div><h3 class="skill-card__title">JavaScript</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="90"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#4479A1"><i data-lucide="database"></i></div><h3 class="skill-card__title">MySQL</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="78"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#E44D26"><i data-lucide="code-2"></i></div><h3 class="skill-card__title">HTML5 / CSS3</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="92"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#764ABC"><i data-lucide="server"></i></div><h3 class="skill-card__title">Express.js</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="76"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#336791"><i data-lucide="database"></i></div><h3 class="skill-card__title">SQL</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="85"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#E34C26"><i data-lucide="layers"></i></div><h3 class="skill-card__title">Git/GitHub</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="88"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#1F77B4"><i data-lucide="pie-chart"></i></div><h3 class="skill-card__title">Tableau & PowerBI</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="80"></div></div></div>
+          <div class="skill-card reveal"><div class="skill-card__icon-wrap" style="--accent:#F80000"><i data-lucide="cloud"></i></div><h3 class="skill-card__title">OCI Basics</h3><div class="skill-card__bar"><div class="skill-card__progress" data-width="75"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="layers"></i> Portfolio</span>
+          <h2 class="section__title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <img src="assets/hero-bg.png" alt="Portfolio Website" loading="lazy" width="600" height="340">
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--sm btn--primary"><i data-lucide="external-link"></i> Live</a>
+                <a href="https://github.com/heyamjd" class="btn btn--sm btn--outline" target="_blank" rel="noopener"><i data-lucide="github"></i> Source</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__badge">Web Development</span>
+              <h3 class="project-card__title">Portfolio Website</h3>
+              <p class="project-card__desc">A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects and skills. Deployed on GitHub with version control.</p>
+              <div class="project-card__tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TIMELINE -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="briefcase"></i> Journey</span>
+          <h2 class="section__title">Education <span class="gradient-text">Timeline</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item reveal reveal--left">
+            <div class="timeline__dot"><i data-lucide="graduation-cap"></i></div>
+            <div class="timeline__card">
+              <span class="timeline__date">2023 — 2027</span>
+              <h3 class="timeline__title">B.Tech in Computer Science Engineering</h3>
+              <h4 class="timeline__subtitle">Poornima University, Jaipur</h4>
+              <p>Currently in 6th semester. CGPA: 6.74. Focusing on full-stack development, data analytics, and cloud technologies.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal--right">
+            <div class="timeline__dot"><i data-lucide="school"></i></div>
+            <div class="timeline__card">
+              <span class="timeline__date">2022 — 2023</span>
+              <h3 class="timeline__title">Senior Secondary Education (RBSE)</h3>
+              <h4 class="timeline__subtitle">Abhilasha Public School, Sandwa</h4>
+              <p>Percentage: 88.80%. Completed senior secondary education with strong academic performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="certifications section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="award"></i> Certifications</span>
+          <h2 class="section__title">Professional <span class="gradient-text">Certifications</span></h2>
+        </div>
+        <div class="certs__grid certs__grid--3">
+          <div class="cert-card reveal">
+            <div class="cert-card__glow"></div>
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 48 48" width="52" height="52"><circle cx="24" cy="24" r="20" fill="none" stroke="url(#g1)" stroke-width="2"/><text x="24" y="29" text-anchor="middle" font-size="14" fill="currentColor" font-weight="700">G</text><defs><linearGradient id="g1"><stop offset="0%" stop-color="#4285F4"/><stop offset="33%" stop-color="#EA4335"/><stop offset="66%" stop-color="#FBBC05"/><stop offset="100%" stop-color="#34A853"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="cert-card__title">Google Cloud Career Launchpad</h3>
+            <p class="cert-card__issuer">Google — Data Analytics Track</p>
+            <span class="cert-card__date">Feb 2026</span>
+            <span class="cert-card__badge"><i data-lucide="badge-check"></i> Verified</span>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__glow"></div>
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 48 48" width="52" height="52"><circle cx="24" cy="24" r="20" fill="none" stroke="#F80000" stroke-width="2"/><text x="24" y="29" text-anchor="middle" font-size="11" fill="currentColor" font-weight="700">OCI</text></svg>
+            </div>
+            <h3 class="cert-card__title">OCI Data Science Professional</h3>
+            <p class="cert-card__issuer">Oracle — Cloud Infrastructure</p>
+            <span class="cert-card__date">Oct 2025</span>
+            <span class="cert-card__badge"><i data-lucide="badge-check"></i> Verified</span>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__glow"></div>
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 48 48" width="52" height="52"><circle cx="24" cy="24" r="20" fill="none" stroke="#0052CC" stroke-width="2"/><text x="24" y="29" text-anchor="middle" font-size="11" fill="currentColor" font-weight="700">TCS</text></svg>
+            </div>
+            <h3 class="cert-card__title">Career Edge - Young Professional</h3>
+            <p class="cert-card__issuer">TCS iON</p>
+            <span class="cert-card__date">Aug 2025</span>
+            <span class="cert-card__badge"><i data-lucide="badge-check"></i> Verified</span>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__glow"></div>
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 48 48" width="52" height="52"><circle cx="24" cy="24" r="20" fill="none" stroke="#F80000" stroke-width="2"/><text x="24" y="29" text-anchor="middle" font-size="11" fill="currentColor" font-weight="700">OCI</text></svg>
+            </div>
+            <h3 class="cert-card__title">OCI AI Foundations Associate</h3>
+            <p class="cert-card__issuer">Oracle — Cloud Infrastructure</p>
+            <span class="cert-card__date">Aug 2025</span>
+            <span class="cert-card__badge"><i data-lucide="badge-check"></i> Verified</span>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__glow"></div>
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 48 48" width="52" height="52"><circle cx="24" cy="24" r="20" fill="none" stroke="#1A73E8" stroke-width="2"/><text x="24" y="29" text-anchor="middle" font-size="10" fill="currentColor" font-weight="700">NPTEL</text></svg>
+            </div>
+            <h3 class="cert-card__title">Technical English for Engineers</h3>
+            <p class="cert-card__issuer">NPTEL</p>
+            <span class="cert-card__date">Oct 2024</span>
+            <span class="cert-card__badge"><i data-lucide="badge-check"></i> Verified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="achievements section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="trophy"></i> Achievements</span>
+          <h2 class="section__title">Notable <span class="gradient-text">Achievements</span></h2>
+        </div>
+        <div class="achieve__grid">
+          <div class="achieve-card reveal">
+            <div class="achieve-card__icon"><i data-lucide="bar-chart-3"></i></div>
+            <div class="achieve-card__body">
+              <h3>Data Analytics Job Simulation</h3>
+              <p class="achieve-card__issuer">Forage — Jul 2025</p>
+            </div>
+          </div>
+          <div class="achieve-card reveal">
+            <div class="achieve-card__icon"><i data-lucide="shopping-cart"></i></div>
+            <div class="achieve-card__body">
+              <h3>Flipkart GRID 6.0</h3>
+              <p class="achieve-card__issuer">Unstop — Aug 2024</p>
+            </div>
+          </div>
+          <div class="achieve-card reveal">
+            <div class="achieve-card__icon"><i data-lucide="trophy"></i></div>
+            <div class="achieve-card__body">
+              <h3>Prayogam 2k24</h3>
+              <p class="achieve-card__issuer">Poornima University — Feb 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag"><i data-lucide="mail"></i> Reach Out</span>
+          <h2 class="section__title">Get in <span class="gradient-text">Touch</span></h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__desc">Have a project in mind or want to collaborate? Drop me a message and I'll get back to you as soon as possible.</p>
+            <div class="contact__links">
+              <a href="mailto:amjad.manihar9680@gmail.com" class="contact-link">
+                <div class="contact-link__icon"><i data-lucide="mail"></i></div>
+                <div><span class="contact-link__label">Email</span><span class="contact-link__value">amjad.manihar9680@gmail.com</span></div>
+              </a>
+              <a href="tel:+919257925647" class="contact-link">
+                <div class="contact-link__icon"><i data-lucide="phone"></i></div>
+                <div><span class="contact-link__label">Phone</span><span class="contact-link__value">+91 9257925647</span></div>
+              </a>
+              <a href="https://linkedin.com/in/heyamjd" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link__icon"><i data-lucide="linkedin"></i></div>
+                <div><span class="contact-link__label">LinkedIn</span><span class="contact-link__value">linkedin.com/in/heyamjd</span></div>
+              </a>
+              <a href="https://github.com/heyamjd" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link__icon"><i data-lucide="github"></i></div>
+                <div><span class="contact-link__label">GitHub</span><span class="contact-link__value">github.com/heyamjd</span></div>
+              </a>
+            </div>
+            <a href="assets/heyamjd-resume.pdf" class="btn btn--primary btn--download" download="Heyamjd-Resume.pdf"><i data-lucide="download"></i> Download Resume</a>
+          </div>
+          <form id="contact-form" class="contact__form reveal reveal--right" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <div class="input-wrap"><i data-lucide="user"></i><input id="contact-name" type="text" name="name" placeholder="John Doe" required></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <div class="input-wrap"><i data-lucide="at-sign"></i><input id="contact-email" type="email" name="email" placeholder="john@example.com" required></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <div class="input-wrap textarea-wrap"><i data-lucide="message-square"></i><textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea></div>
+            </div>
+            <button id="contact-submit" type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text"><i data-lucide="send"></i> Send Message</span><span class="btn__loader"></span>
+            </button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#hero" class="nav__logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket"> /&gt;</span></a>
+      <p>&copy; 2026 Amajad Manihar. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://linkedin.com/in/heyamjd" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://github.com/heyamjd" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="mailto:amjad.manihar9680@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="btn-icon back-to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
